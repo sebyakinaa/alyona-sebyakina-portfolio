@@ -1,0 +1,25 @@
+.hero{height:195svh;margin-left:var(--sidebar-width);overflow:clip}
+.hero__stage{position:relative;width:100%;height:100svh;overflow:clip}
+.hero-composition{position:absolute;inset:0;opacity:0}
+.hero-object{position:absolute;will-change:transform}
+.hero-object img{display:block;width:100%;height:100%;object-fit:contain}
+.hero-object--badge{z-index:5;width:clamp(240px,22.5vw,390px);height:min(83svh,760px);left:49.3%;top:-1.7%;transform:translateX(-50%)}
+.hero-object--lightning{width:clamp(310px,30.5vw,586px);height:53svh;left:0;top:-12.7%}
+.hero-object--portfolio{width:52.6vw;height:59.5svh;left:51.5%;top:-9.5%}
+.hero-object--lime-left{width:38vw;height:64svh;left:-21%;top:37%}
+.hero-object--lime-right{width:38vw;height:47svh;right:-8%;top:auto;bottom:0}
+.hero-object--cursor{width:24.5vw;height:42svh;left:16.5%;top:67%}
+.hero-object--sparkle{width:15vw;height:24svh;left:64.5%;top:41%}
+.hero-object--paperclip{width:18vw;height:29svh;left:45.5%;top:77%}
+@media(max-width:767px){
+  .hero{height:100svh;margin-left:0;padding-top:56px}
+  .hero__stage{height:calc(100svh - 56px)}
+  .hero-object--badge{width:52vw;height:62svh;left:50%;top:10%}
+  .hero-object--lightning{width:48vw;height:35svh;left:-14%;top:-2%}
+  .hero-object--portfolio{width:58vw;height:36svh;left:57%;top:0}
+  .hero-object--lime-left{width:44vw;height:38svh;left:-18%;top:50%}
+  .hero-object--lime-right{width:54vw;height:35svh;right:-18%;top:auto;bottom:0}
+  .hero-object--cursor{width:42vw;height:30svh;left:3%;top:69%}
+  .hero-object--sparkle{width:25vw;height:20svh;left:71%;top:41%}
+  .hero-object--paperclip{display:none}
+}

@@ -1,0 +1,21 @@
+:root{
+  --color-bg:#151515;
+  --color-text:#fff;
+  --color-lime:#dcf916;
+  --radius-card:16px;
+  --gallery-gap:16px;
+  --sidebar-width:270px;
+  --content-gutter:clamp(24px,4.85vw,93px);
+  --space-1:8px;
+  --space-2:16px;
+  --space-3:24px;
+  --space-4:32px;
+  --space-5:48px;
+  --space-6:64px;
+  --space-7:96px;
+  --font-main:Involve,Arial,sans-serif;
+  --font-sidebar:Involve,Arial,sans-serif;
+}
+@media(max-width:1439px) and (min-width:768px){
+  :root{--sidebar-width:clamp(200px,17vw,240px);--content-gutter:clamp(24px,4vw,48px)}
+}

@@ -1,0 +1,41 @@
+.projects{margin-left:var(--sidebar-width);padding:0 var(--content-gutter) var(--space-7)}
+.projects>h2{font-size:48px;line-height:1.2;font-weight:600;margin-bottom:var(--space-5)}
+.projects__list{display:grid;gap:var(--space-6)}
+.project{scroll-margin-top:var(--space-6)}
+.project__copy{width:min(736px,100%);margin-bottom:var(--space-4);overflow:hidden}
+.project__copy h3{font-size:32px;font-weight:600;margin-bottom:var(--space-2)}
+.project__copy p{font-size:24px;margin-bottom:var(--space-3)}
+.gallery{display:grid;grid-template-columns:358fr 484fr 580fr;grid-template-rows:270fr 256fr 237fr;gap:var(--gallery-gap);aspect-ratio:1454/795}
+.gallery__card{position:relative;overflow:hidden;border-radius:var(--radius-card);background:var(--color-bg);min-width:0;transition:transform .35s}
+.gallery__card img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s;scale:1.002}
+.gallery__card:hover{transform:translateY(-2px)}
+.gallery__card:hover img{scale:1.025}
+.gallery__card--feature{grid-column:1;grid-row:1/3}
+.gallery__card--top{grid-column:2;grid-row:1}
+.gallery__card--right{grid-column:3;grid-row:1}
+.gallery__card--middle{grid-column:2;grid-row:2}
+.gallery__card--bottom{grid-column:3;grid-row:2/4}
+.gallery__card--wide{grid-column:1/3;grid-row:3}
+.gallery__placeholder{display:block;width:100%;height:100%;background:#fff}
+@media(max-width:1279px){
+  .projects>h2{font-size:clamp(36px,4vw,48px)}
+  .project__copy h3{font-size:28px}
+  .project__copy p{font-size:20px}
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none;gap:var(--gallery-gap);aspect-ratio:auto}
+  .gallery__card{grid-column:auto;grid-row:auto;aspect-ratio:1}
+  .gallery__card--feature,.gallery__card--wide{grid-column:1/3;grid-row:auto;aspect-ratio:2}
+}
+@media(max-width:767px){
+  .projects{margin-left:0;padding:var(--space-6) var(--space-2)}
+  .projects>h2{font-size:36px;margin-bottom:40px}
+  .projects__list{gap:var(--space-6)}
+  .project{scroll-margin-top:72px}
+  .project__copy{margin-bottom:var(--space-4)}
+  .project__copy h3{font-size:26px;margin-bottom:12px}
+  .project__copy p{font-size:18px;line-height:1.3;margin-bottom:16px}
+  .gallery{gap:var(--gallery-gap)}
+  .gallery__card{border-radius:10px}
+  .gallery__card--feature{grid-column:1/3;grid-row:auto;aspect-ratio:2}
+  .gallery__card--top,.gallery__card--right,.gallery__card--middle,.gallery__card--bottom{grid-column:auto;grid-row:auto}
+  .gallery__card--wide{grid-column:1/3;grid-row:auto;aspect-ratio:2}
+}

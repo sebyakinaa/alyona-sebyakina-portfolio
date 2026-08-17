@@ -1,0 +1,2 @@
+.hero-object--badge img{animation:badge-sway 5.2s ease-in-out infinite;transform-origin:50% 3%}
+@keyframes badge-sway{0%,100%{transform:rotate(-1.35deg)}50%{transform:rotate(1.35deg)}}

@@ -1,0 +1,1 @@
+import './ExternalLink.css'; export function ExternalLink({href,children}:{href:string|null;children:string}){if(!href)return <span className="external-link is-disabled" aria-disabled="true">{children}<span aria-hidden>↗</span></span>;return <a className="external-link" href={href} target="_blank" rel="noopener noreferrer">{children}<span aria-hidden>↗</span></a>}

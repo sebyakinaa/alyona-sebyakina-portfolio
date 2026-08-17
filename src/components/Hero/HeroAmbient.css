@@ -1,0 +1,16 @@
+.hero-object--badge img{animation:badge-sway 5.8s ease-in-out infinite;transform-origin:50% 0}
+.hero-object--lightning img{animation:lightning-float 6.4s ease-in-out infinite}
+.hero-object--portfolio img{animation:portfolio-drift 8.2s ease-in-out infinite}
+.hero-object--lime-left img{animation:flower-turn 9s ease-in-out infinite}
+.hero-object--cursor img{animation:cursor-float 5.2s ease-in-out infinite}
+.hero-object--sparkle img{animation:sparkle-breathe 4.8s ease-in-out infinite}
+.hero-object--paperclip img{animation:paperclip-float 7.1s ease-in-out infinite}
+.hero-object--lime-right img{animation:none}
+@keyframes badge-sway{0%,100%{transform:rotate(-1.1deg)}50%{transform:rotate(1.1deg)}}
+@keyframes lightning-float{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(-7px,-10px,0) rotate(-1.2deg)}}
+@keyframes portfolio-drift{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(8px,-6px,0) rotate(.8deg)}}
+@keyframes flower-turn{0%,100%{transform:rotate(-4deg) scale(1)}50%{transform:rotate(3deg) scale(1.015)}}
+@keyframes cursor-float{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(-5px,-12px,0) rotate(-1.5deg)}}
+@keyframes sparkle-breathe{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.045) rotate(4deg)}}
+@keyframes paperclip-float{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(5px,-9px,0) rotate(2deg)}}
+@media(prefers-reduced-motion:reduce){.hero-object img{animation:none!important}}

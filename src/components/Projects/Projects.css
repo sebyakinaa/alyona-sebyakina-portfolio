@@ -7,7 +7,7 @@
 .project__copy p{font-size:24px;margin-bottom:var(--space-3)}
 .gallery{display:grid;grid-template-columns:358fr 484fr 580fr;grid-template-rows:270fr 256fr 237fr;gap:var(--gallery-gap);aspect-ratio:1454/795}
 .gallery__card{position:relative;overflow:hidden;border-radius:var(--radius-card);background:var(--color-bg);min-width:0;transition:transform .35s}
-.gallery__card img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s;scale:1.002}
+.gallery__card picture{display:block;width:100%;height:100%}.gallery__card img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s;scale:1.002}
 .gallery__card:hover{transform:translateY(-2px)}
 .gallery__card:hover img{scale:1.025}
 .gallery__card--feature{grid-column:1;grid-row:1/3}

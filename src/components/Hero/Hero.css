@@ -2,7 +2,7 @@
 .hero__stage{position:relative;width:100%;height:100svh;overflow:clip}
 .hero-composition{position:absolute;inset:0;opacity:0}
 .hero-object{position:absolute;will-change:transform}
-.hero-object img{display:block;width:100%;height:100%;object-fit:contain}
+.hero-object picture{display:block;width:100%;height:100%}.hero-object img{display:block;width:100%;height:100%;object-fit:contain}
 .hero-object--badge{z-index:5;width:clamp(240px,22.5vw,390px);height:min(83svh,760px);left:49.3%;top:-1.7%;transform:translateX(-50%)}
 .hero-object--lightning{width:clamp(310px,30.5vw,586px);height:53svh;left:0;top:-12.7%}
 .hero-object--portfolio{width:52.6vw;height:59.5svh;left:51.5%;top:-9.5%}

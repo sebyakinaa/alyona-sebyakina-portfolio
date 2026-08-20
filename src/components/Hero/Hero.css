@@ -14,7 +14,7 @@
 @media(max-width:767px){
   .hero{height:116svh;margin-left:0;padding-top:56px}
   .hero__stage{position:sticky;top:56px;height:calc(100svh - 56px)}
-  .hero-object--badge{width:52vw;height:62svh;left:50%;top:10%}
+  .hero-object--badge{width:52vw;height:62svh;left:50%;top:-8%}
   .hero-object--lightning{width:48vw;height:35svh;left:-14%;top:-2%}
   .hero-object--portfolio{width:58vw;height:36svh;left:57%;top:0}
   .hero-object--lime-left{width:44vw;height:38svh;left:-18%;top:50%}

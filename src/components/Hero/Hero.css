@@ -14,7 +14,9 @@
 @media(max-width:767px){
   .hero{height:116svh;margin-left:0;padding-top:56px}
   .hero__stage{position:sticky;top:56px;height:calc(100svh - 56px)}
-  .hero-object--badge{width:52vw;height:62svh;left:50%;top:-8%}
+  .hero-object--badge{width:52vw;height:62svh;left:50%;top:4%}
+  .hero-object--badge::before{content:"";position:absolute;z-index:0;left:43.5%;top:-38svh;width:13%;height:39svh;background:linear-gradient(90deg,#aeb800,#e7f300 48%,#aeb800);box-shadow:inset 1px 0 rgba(0,0,0,.28),inset -1px 0 rgba(0,0,0,.28)}
+  .hero-object--badge picture{position:relative;z-index:1}
   .hero-object--lightning{width:48vw;height:35svh;left:-14%;top:-2%}
   .hero-object--portfolio{width:58vw;height:36svh;left:57%;top:0}
   .hero-object--lime-left{width:44vw;height:38svh;left:-18%;top:50%}

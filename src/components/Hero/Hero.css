@@ -4,7 +4,7 @@
 .hero-object{position:absolute;will-change:transform}
 .hero-object picture{display:block;width:100%;height:100%}.hero-object img{display:block;width:100%;height:100%;object-fit:contain}
 .hero-object--badge{z-index:5;width:clamp(240px,22.5vw,390px);height:min(83svh,760px);left:49.3%;top:-1.7%;transform:translateX(-50%)}
-.hero-object--badge::before{content:"";position:absolute;z-index:0;left:41%;top:-32svh;width:18%;height:34svh;background:linear-gradient(90deg,#aeb800,#e7f300 48%,#aeb800);box-shadow:inset 1px 0 rgba(0,0,0,.28),inset -1px 0 rgba(0,0,0,.28)}
+.hero-object--badge::before{content:"";position:absolute;z-index:0;left:41%;top:-32svh;width:18%;height:34svh;background:url('../../../public/assets-optimized/hero/badge-lanyard.png') center top/100% auto repeat-y}
 .hero-object--badge picture{position:relative;z-index:1}
 .hero-object--lightning{width:clamp(310px,30.5vw,586px);height:53svh;left:0;top:-12.7%}
 .hero-object--portfolio{width:52.6vw;height:59.5svh;left:51.5%;top:-9.5%}

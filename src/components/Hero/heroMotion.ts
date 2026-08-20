@@ -15,6 +15,20 @@ export function createHeroMotion(root:HTMLElement,reduced:boolean){
       tl.to(el,{x:el.dataset.exitX,y:el.dataset.exitY,rotate:Number(el.dataset.exitRotate||0),opacity:isBadge?0:.15,scale:isBadge?.94:1,ease:'power2.in',duration:.72+i*.035},i*.13);
     });
   });
-  mm.add('(max-width:767px)',()=>{objects.filter(el=>el.dataset.object!=='badge').forEach((el,i)=>gsap.to(el,{y:28+i*3,opacity:.2,scrollTrigger:{trigger:root,start:'top top',end:`${70+i*3}% top`,scrub:true}}));});
+  mm.add('(max-width:767px)',()=>{
+    objects.forEach((el,i)=>{
+      const isBadge=el.dataset.object==='badge';
+      gsap.to(el,{
+        x:isBadge?'0vw':el.dataset.exitX,
+        y:isBadge?'-38vh':el.dataset.exitY,
+        rotate:Number(el.dataset.exitRotate||0),
+        opacity:0,
+        scale:isBadge?.92:1,
+        ease:'none',
+        scrollTrigger:{trigger:root,start:'top top',end:'bottom bottom',scrub:true},
+        delay:i*.015,
+      });
+    });
+  });
   return()=>mm.revert();
 }

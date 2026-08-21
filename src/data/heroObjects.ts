@@ -4,7 +4,7 @@ const mobileAsset=(file:string)=>import.meta.env.BASE_URL+'assets-mobile/hero/'+
 export const heroObjects:HeroObject[]=[
 {id:'lightning',src:asset('lightning'),mobileSrc:mobileAsset('lightning'),alt:'',depth:1,className:'hero-object--lightning',exit:{x:'-55vw',y:'-50vh',rotate:-3}},
 {id:'lime-left',src:asset('lime-left'),mobileSrc:mobileAsset('lime-left'),alt:'',depth:.8,className:'hero-object--lime-left',exit:{x:'-62vw',y:'12vh',rotate:0}},
-{id:'badge',src:asset('badge'),mobileSrc:asset('badge-extended'),alt:'Бейдж Алены Себякиной, продуктового дизайнера',depth:.22,className:'hero-object--badge',exit:{x:'0vw',y:'-10vh',rotate:0}},
+{id:'badge',src:asset('badge'),mobileSrc:asset('badge'),alt:'Бейдж Алены Себякиной, продуктового дизайнера',depth:.22,className:'hero-object--badge',exit:{x:'0vw',y:'-10vh',rotate:0}},
 {id:'portfolio',src:asset('portfolio-case'),mobileSrc:mobileAsset('portfolio-case'),alt:'',depth:.7,className:'hero-object--portfolio',exit:{x:'58vw',y:'-42vh',rotate:0}},
 {id:'sparkle',src:asset('sparkle'),mobileSrc:mobileAsset('sparkle'),alt:'',depth:.55,className:'hero-object--sparkle',exit:{x:'48vw',y:'-40vh',rotate:4}},
 {id:'lime-right',src:asset('lime-right'),mobileSrc:mobileAsset('lime-right'),alt:'',depth:.9,className:'hero-object--lime-right',exit:{x:'72vw',y:'0vh',rotate:0}},

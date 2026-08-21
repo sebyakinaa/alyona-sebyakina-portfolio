@@ -12,7 +12,7 @@
 .hero-object--sparkle{width:15vw;height:24svh;left:64.5%;top:41%}
 .hero-object--paperclip{width:18vw;height:29svh;left:45.5%;top:77%}
 @media(max-width:767px){
-  .hero{height:116svh;margin-left:0;padding-top:56px}
+  .hero{height:108svh;margin-left:0;padding-top:56px}
   .hero__stage{position:sticky;top:56px;height:calc(100svh - 56px)}
   .hero-object--badge{width:52vw;height:62svh;left:50%;top:4%}
   .hero-object--lightning{width:48vw;height:35svh;left:-14%;top:-2%}

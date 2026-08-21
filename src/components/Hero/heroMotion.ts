@@ -25,7 +25,7 @@ export function createHeroMotion(root:HTMLElement,reduced:boolean){
         opacity:0,
         scale:isBadge?.92:1,
         ease:'none',
-        scrollTrigger:{trigger:root,start:'top top',end:'bottom bottom',scrub:true},
+        scrollTrigger:{trigger:root,start:'top top',end:'bottom bottom',scrub:.35},
         delay:i*.015,
       });
     });

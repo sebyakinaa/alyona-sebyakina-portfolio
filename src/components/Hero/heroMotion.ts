@@ -16,18 +16,18 @@ export function createHeroMotion(root:HTMLElement,reduced:boolean){
     });
   });
   mm.add('(max-width:767px)',()=>{
+    const tl=gsap.timeline({scrollTrigger:{trigger:root,start:'top top',end:'bottom bottom',scrub:.65}});
     objects.forEach((el,i)=>{
       const isBadge=el.dataset.object==='badge';
-      gsap.to(el,{
+      tl.to(el,{
         x:isBadge?'0vw':el.dataset.exitX,
         y:isBadge?'-38vh':el.dataset.exitY,
         rotate:Number(el.dataset.exitRotate||0),
         opacity:0,
         scale:isBadge?.92:1,
-        ease:'none',
-        scrollTrigger:{trigger:root,start:'top top',end:'bottom bottom',scrub:.35},
-        delay:i*.015,
-      });
+        ease:'power1.inOut',
+        duration:.8,
+      },i*.06);
     });
   });
   return()=>mm.revert();

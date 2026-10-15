@@ -1,17 +1,20 @@
-# Портфолио Алены Себякиной
+# Портфолио Алёны Себякиной
 
-React + TypeScript + Vite, GSAP/ScrollTrigger и Lenis.
+Статический сайт: главная страница и проекты Рест, Sleep и Your Meal.
 
-## Запуск
+Опубликованный адрес: https://sebyakinaa.github.io/alyona-sebyakina-portfolio/
 
-`pnpm install`, затем `pnpm dev`. Проверки: `pnpm build`, `pnpm test`, `pnpm test:e2e`, `pnpm lint`, `pnpm typecheck`.
+## Редактирование
 
-Ссылки проектов находятся в `src/data/projects.ts`, PDF-резюме — в `public/resume`, шрифты — в `public/fonts`, изображения — в `public/assets`.
+Страницы, стили, изображения, GIF и PDF-резюме находятся в `site/`.
+Все внутренние ссылки относительные и работают в каталоге GitHub Pages.
 
-## Публикация на GitHub Pages
+## Сборка и публикация
 
-1. Создайте репозиторий на GitHub и загрузите в него содержимое этой папки.
-2. В Settings → Pages выберите GitHub Actions.
-3. Отправьте изменения в ветку main. Workflow .github/workflows/deploy-pages.yml соберёт и опубликует сайт автоматически.
+`pnpm build` или `node scripts/build.mjs` копирует сайт в `dist/`.
+Дополнительные зависимости для сборки не нужны.
 
-Сайт будет доступен по адресу вида https://<username>.github.io/<repository>/.
+Существующий workflow `.github/workflows/deploy-pages.yml` публикует `dist/`
+после изменений в `main`. Адрес GitHub Pages сохраняется.
+
+Предыдущая версия портфолио сохранена в истории Git до коммита замены.

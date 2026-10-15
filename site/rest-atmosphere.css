@@ -73,3 +73,6 @@
  .rest-immersive .case-next{padding:48px 22px}.rest-immersive>footer{padding:22px;font-size:11px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.rest-immersive .case-back{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:-8px;color:inherit;flex-shrink:0}
+.rest-immersive .case-back:hover{opacity:.65}

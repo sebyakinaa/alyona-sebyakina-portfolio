@@ -211,3 +211,10 @@
 @media(max-width:1050px){.rest-immersive .case-launch-intro{display:block}.rest-immersive .case-launch-link{margin-top:24px}}
 @media(max-width:700px){.rest-immersive .case-launch-link{font-size:16px;padding:16px 22px}.rest-immersive .case-next-arrow{width:44px;height:44px}}
 @media(prefers-reduced-motion:reduce){.rest-immersive .case-next,.rest-immersive .case-next strong,.rest-immersive .case-next strong>span,.rest-immersive .case-next-arrow,.rest-immersive .case-launch-link{transition:none}.rest-immersive .case-next:hover strong>span,.rest-immersive .case-next:focus-visible strong>span,.rest-immersive .case-next:hover .case-next-arrow,.rest-immersive .case-next:focus-visible .case-next-arrow,.rest-immersive .case-launch-link:hover,.rest-immersive .case-launch-link:focus-visible{transform:none}}
+
+/* Переход к Sleep отделён от карточек и окрашен в палитру следующего кейса. */
+.rest-immersive .case-next{position:relative;clear:both;isolation:isolate;margin:96px 0 0;background:radial-gradient(ellipse 55% 140% at 100% 65%,#2b699d 0,transparent 76%),#05080d;color:#b7d0e4}
+.rest-immersive .case-next strong{color:#e1f3ff}
+.rest-immersive .case-next:hover,.rest-immersive .case-next:focus-visible{background:radial-gradient(ellipse 75% 170% at 100% 60%,#5badf1 0,#143c5c 57%,transparent 88%),#02060a;color:#e4f5ff}
+.rest-immersive .case-next:hover strong,.rest-immersive .case-next:focus-visible strong{color:#f3fbff}
+@media(max-width:700px){.rest-immersive .case-next{margin-top:64px}}

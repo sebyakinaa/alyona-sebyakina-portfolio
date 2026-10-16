@@ -222,3 +222,14 @@
 /* Обычное состояние принадлежит текущему кейсу; hover — следующему. */
 .rest-immersive .case-next:not(:hover):not(:focus-visible){background:transparent;color:var(--case-muted)}
 .rest-immersive .case-next:not(:hover):not(:focus-visible) strong{color:var(--case-ink)}
+
+/* Image paper follows the case surface; figures align to the content gutters. */
+.rest.case.rest-immersive .rest-case .case-media{width:100%;max-width:1280px;margin:36px auto 0;overflow:hidden;background:transparent}
+.rest.case.rest-immersive .rest-case>.case-media{width:calc(100% - 12vw);margin:0 auto}
+.rest.case.rest-immersive .rest-case .case-media img{mix-blend-mode:multiply}
+.rest.case.rest-immersive .rest-case .case-store-grid .case-media{width:100%;margin:0}
+@media(max-width:700px){
+.rest.case.rest-immersive .rest-case .case-media{margin:28px auto 0}
+.rest.case.rest-immersive .rest-case>.case-media{width:calc(100% - 44px);margin:0 auto}
+.rest.case.rest-immersive .rest-case .case-store-grid .case-media{margin:0}
+}

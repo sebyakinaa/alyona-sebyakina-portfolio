@@ -209,3 +209,17 @@
 .case.your-meal.case-refined .meal-system-grid{grid-template-columns:1fr 1fr;gap:24px}
 .case.your-meal.case-refined .meal-system-tile:nth-child(n+5){grid-column:span 2}
 }
+
+/* Center case materials within the page gutters, including compact research maps. */
+.case.your-meal.case-refined .meal-story figure.meal-figure{width:100%;max-width:1120px;margin:36px auto 0;padding:0;background:transparent}
+.case.your-meal.case-refined .meal-story>figure.meal-lead{width:calc(100% - 12vw);max-width:1120px;margin:40px auto 64px}
+.case.your-meal.case-refined .meal-story figure.meal-cjm-compact{max-width:1100px;margin:32px auto 0}
+.case.your-meal.case-refined .meal-story .case-cropped-image{display:block;width:100%;height:auto;max-width:100%;overflow:hidden}
+.case.your-meal.case-refined .meal-story figure.meal-figure :is(img,svg){mix-blend-mode:multiply}
+.case.your-meal.case-refined .meal-story .meal-system-grid{width:100%;margin:32px auto 0}
+.case.sleep.case-refined .sleep-editorial .sleep-native-collage{margin:32px auto 0}
+@media(max-width:700px){
+.case.your-meal.case-refined .meal-story>figure.meal-lead{width:calc(100% - 44px);margin:28px auto 40px}
+.case.your-meal.case-refined .meal-story figure.meal-figure{margin:28px auto 0}
+.case.sleep.case-refined .sleep-editorial .sleep-native-collage{margin:24px auto 0}
+}

@@ -1,5 +1,5 @@
 .case.case.case-refined{--page:#f6f6f3;--ink:#20251d;--muted:#66705e;--panel:#e9eddc;--panel-alt:#fff;--line:#d5dbc9;--accent:#496516;background:var(--page);color:var(--ink)}
-.case.sleep.case.case-refined{--page:#0b1018;--ink:#eef5ff;--muted:#a9bbd0;--panel:#142337;--panel-alt:#101c2c;--line:#2b3e55;--accent:#7bc7ff;background:radial-gradient(ellipse 90% 550px at 85% 0,#183e5b 0,transparent 75%),var(--page)}
+.case.sleep.case.case-refined{--page:#000;--ink:#f6f8fa;--muted:#bdcbd4;--panel:rgba(7,12,16,.92);--panel-alt:rgba(10,17,22,.92);--line:#27404d;--accent:#79d8f2;background-color:#000;background-image:radial-gradient(ellipse 60% 470px at 83% 310px,rgba(91,173,241,.98) 0,rgba(91,173,241,.68) 28%,rgba(91,173,241,.15) 62%,transparent 80%),radial-gradient(ellipse 55% 430px at 9% 1010px,rgba(143,235,239,.98) 0,rgba(91,173,241,.7) 32%,rgba(91,173,241,.15) 66%,transparent 84%);background-size:100% 1600px;background-repeat:repeat-y;color:var(--ink)}
 .case.case-refined:before,.case.case-refined:after{content:none!important}
 .case.case-refined>header{max-width:none;padding:28px 6vw;border:0;background:none}
 .case.case-refined .case-back{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;margin:-8px;color:inherit}
@@ -119,3 +119,12 @@
 
 .case.case-refined main>section{max-width:none}
 .case.case-refined .meal-rows>article:last-child:nth-child(odd){grid-column:1/-1}
+
+/* Палитра Sleep из слайда: чёрный, голубой и бирюзовый свет. */
+.case.sleep.case-refined .sleep-heading h1{color:#e1f5ff;background:none;-webkit-text-fill-color:currentColor;text-shadow:0 4px 45px #0008}
+.case.sleep.case-refined .sleep-heading>.sleep-copy{color:#edf6fa;text-shadow:0 2px 18px #0009}
+.case.sleep.case-refined :is(.sleep-cards,.research-questions)>article,.case.sleep.case-refined .research-method>div,.case.sleep.case-refined .research-hypotheses>article,.case.sleep.case-refined .audience-shift>div,.case.sleep.case-refined .decision-lines>article,.case.sleep.case-refined .case-result-grid article{border:1px solid #83d7f228;background:var(--panel);box-shadow:0 12px 45px #0002}
+.case.sleep.case-refined :is(.sleep-cards,.research-questions)>article:nth-child(even){background:var(--panel-alt)}
+.case.sleep.case-refined .next{background:#060a0d}
+.case.sleep.case-refined .next:hover,.case.sleep.case-refined .next:focus-visible{background:#122d3b}
+@media(max-width:700px){.case.sleep.case.case-refined{background-size:180% 1400px;background-position:center top}}

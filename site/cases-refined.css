@@ -160,3 +160,11 @@
  .case.sleep.case-refined .sleep-editorial .sleep-mockup-digital{grid-template-columns:1fr;gap:20px;max-width:560px}
  .case.sleep.case-refined .sleep-editorial .next{margin-top:52px}
 }
+
+/* Носители Sleep — одна композиция с общими краями, без пустых ячеек. */
+.case.sleep.case-refined .sleep-editorial .sleep-gallery{display:grid;gap:20px;width:100%;max-width:860px;margin:32px 0 0}
+.case.sleep.case-refined .sleep-editorial .sleep-gallery-portraits{display:grid;grid-template-columns:.6605166fr .7682119fr;gap:20px;align-items:start}
+.case.sleep.case-refined .sleep-editorial .sleep-gallery-digital{display:grid;grid-template-columns:2.1481481fr 1.7925926fr;gap:20px;align-items:start}
+.case.sleep.case-refined .sleep-editorial .sleep-gallery figure{display:block;width:100%;max-width:none;min-width:0;margin:0;padding:0;background:none;border:0;box-shadow:none}
+.case.sleep.case-refined .sleep-editorial .sleep-gallery img{display:block;width:100%;height:auto;max-width:100%;max-height:none;object-fit:contain;margin:0;border-radius:0}
+@media(max-width:700px){.case.sleep.case-refined .sleep-editorial .sleep-gallery,.case.sleep.case-refined .sleep-editorial .sleep-gallery-portraits,.case.sleep.case-refined .sleep-editorial .sleep-gallery-digital{gap:12px}}

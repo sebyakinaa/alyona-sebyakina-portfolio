@@ -218,3 +218,7 @@
 .rest-immersive .case-next:hover,.rest-immersive .case-next:focus-visible{background:radial-gradient(ellipse 75% 170% at 100% 60%,#5badf1 0,#143c5c 57%,transparent 88%),#02060a;color:#e4f5ff}
 .rest-immersive .case-next:hover strong,.rest-immersive .case-next:focus-visible strong{color:#f3fbff}
 @media(max-width:700px){.rest-immersive .case-next{margin-top:64px}}
+
+/* Обычное состояние принадлежит текущему кейсу; hover — следующему. */
+.rest-immersive .case-next:not(:hover):not(:focus-visible){background:transparent;color:var(--case-muted)}
+.rest-immersive .case-next:not(:hover):not(:focus-visible) strong{color:var(--case-ink)}

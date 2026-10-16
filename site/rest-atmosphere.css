@@ -194,3 +194,20 @@
  .rest-immersive .case-insights{gap:16px;margin-top:28px}.rest-immersive .case-insights>article{padding:26px;border-radius:20px}.rest-immersive .case-insight-topic{margin-bottom:24px}.rest-immersive .case-insights h3{font-size:30px}.rest-immersive .case-insight-result p{font-size:18px}
  .rest-immersive .case-channels,.rest-immersive .case-economics-main,.rest-immersive .case-model-path{grid-template-columns:1fr;gap:20px}.rest-immersive .case-channels>article,.rest-immersive .case-economics-main article{padding:26px;border-radius:20px}.rest-immersive .case-channels dl{gap:36px}.rest-immersive .case-channels dd{font-size:23px}.rest-immersive .case-model-path{gap:28px}.rest-immersive .case-model-path strong{font-size:40px}.rest-immersive .case-model-inputs{gap:16px}
 }
+
+/* Промолендинг — часть запуска; следующий кейс реагирует на взаимодействие. */
+.rest-immersive .case-launch-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:40px}
+.rest-immersive .case-launch-intro>.case-copy{max-width:820px;flex:1}
+.rest-immersive .case-launch-link{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;max-width:100%;padding:18px 24px;background:#5d73d8;color:#fff;border-radius:40px;font-size:17px;line-height:1.35;transition:background .2s ease,transform .2s ease}
+.rest-immersive .case-launch-link:hover,.rest-immersive .case-launch-link:focus-visible{background:#425bc3;transform:translateY(-2px)}
+.rest-immersive .case-next{transition:background .25s ease,color .25s ease}
+.rest-immersive .case-next strong{display:flex;align-items:center;justify-content:space-between;gap:24px;transition:color .25s ease}
+.rest-immersive .case-next strong>span{transition:transform .25s ease}
+.rest-immersive .case-next-arrow{flex-shrink:0;opacity:.45;transition:transform .25s ease,opacity .25s ease}
+.rest-immersive .case-next:hover,.rest-immersive .case-next:focus-visible{background:#e7edfc;color:#4d65c2}
+.rest-immersive .case-next:hover strong,.rest-immersive .case-next:focus-visible strong{color:#4d65c2}
+.rest-immersive .case-next:hover strong>span,.rest-immersive .case-next:focus-visible strong>span{transform:translateX(8px)}
+.rest-immersive .case-next:hover .case-next-arrow,.rest-immersive .case-next:focus-visible .case-next-arrow{transform:translateX(8px);opacity:1}
+@media(max-width:1050px){.rest-immersive .case-launch-intro{display:block}.rest-immersive .case-launch-link{margin-top:24px}}
+@media(max-width:700px){.rest-immersive .case-launch-link{font-size:16px;padding:16px 22px}.rest-immersive .case-next-arrow{width:44px;height:44px}}
+@media(prefers-reduced-motion:reduce){.rest-immersive .case-next,.rest-immersive .case-next strong,.rest-immersive .case-next strong>span,.rest-immersive .case-next-arrow,.rest-immersive .case-launch-link{transition:none}.rest-immersive .case-next:hover strong>span,.rest-immersive .case-next:focus-visible strong>span,.rest-immersive .case-next:hover .case-next-arrow,.rest-immersive .case-next:focus-visible .case-next-arrow,.rest-immersive .case-launch-link:hover,.rest-immersive .case-launch-link:focus-visible{transform:none}}
